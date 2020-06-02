@@ -1,0 +1,8 @@
+KALI LINUX
+recon ng
+show modules
+use recon/domain/contact/whois_pocs
+show option
+set SOURCE facebook.com
+show option
+run

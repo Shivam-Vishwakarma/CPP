@@ -1,0 +1,32 @@
+//wap to sum of two no.
+
+#include<iostream.h>
+#include<conio.h>
+main()
+{ clrscr();
+
+int m,k,l,n;
+cout<<"enter a no. of rows: ";
+cin>>n;
+cout<<"\n\n\n";
+for(k=1;k<=n;k++)
+cout<<"*";
+for(m=1;m<n;m++)
+{
+for(l=1;l<=n;l++)
+ {
+ if(l=1||l=n)
+ cout<<"*";
+ else
+ cout<<" ";
+ }
+}
+
+  getch();
+  }
+
+
+
+
+
+

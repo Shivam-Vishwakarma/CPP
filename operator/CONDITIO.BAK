@@ -1,0 +1,64 @@
+#include<iostream.h>
+#include<conio.h>
+
+
+typedef class overload
+{
+public :
+int a;
+float b;
+overload(int, float);
+int operator< (overload);
+int operator> (overload);
+int operator== (overload);
+int operator!= (overload);
+}over;
+
+overload :: overload(int y, float x)
+{
+a=x;
+b=y;
+}
+
+int overload :: operator<(overload x)
+{
+if((a<x.a) && (b<x.b))
+	return 1;
+else
+	return 0;
+}
+
+int overload :: operator>(overload x)
+{
+if((a>x.a) && (b>x.b))
+	return 1;
+else
+	return 0;
+}
+
+int overload :: operator==(overload x)
+{
+if((a==x.a) && (b==x.b))
+	return 1;
+else
+	return 0;
+}
+
+int overload :: operator!=(overload x)
+{
+if((a!=x.a) && (b!=x.b))
+	return 1;
+else
+	return 0;
+}
+
+void main()
+{
+over o1(2,4.5),o2(3,3.3),o3(2,4.5),o4(5,7.4);
+cout<<endl<<o1>o2;
+cout<<endl<<o1<o2;
+cout<<endl<<o1==o3;
+cout<<endl<<o4>o2;
+getch();
+}
+

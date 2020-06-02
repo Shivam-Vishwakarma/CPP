@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+float p,q,a,b,c,d;
+clrscr();
+printf("\n enter a,b,c of equation \" ax^2 + bx + c=0 \"  \n ");
+scanf("%f%f%f",&a,&b,&c);
+d=(b*b)-(4*a*c);
+p=(-b+sqrt(d))/(2*a);
+q=(-b-sqrt(d))/(2*a);
+printf("\n roots are \n\t %f \n\t %f",p,q);
+getch();
+}

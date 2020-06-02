@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+{
+int i=1,a=1;
+clrscr();
+while(i<=20)
+{
+printf("\t%d",a);
+a+=2;
+i++;
+}
+getch();
+}
+

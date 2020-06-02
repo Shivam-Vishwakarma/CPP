@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,r,temp,rev=0;
+clrscr();
+printf("\n enter a 5 digit num : ");
+scanf("%d",&num);
+temp=num;
+if(temp)
+{
+	r=temp%10;
+	rev=rev*10+r;
+	temp/=10;
+
+	if(temp)
+	{
+		r=temp%10;
+		rev=rev*10+r;
+		temp/=10;
+		if(temp)
+		{
+			r=temp%10;
+			rev=rev*10+r;
+			temp/=10;
+			if(temp)
+			{
+				r=temp%10;
+				rev=rev*10+r;
+				temp/=10;
+				if(temp)
+				{
+					r=temp%10;
+					rev=rev*10+r;
+					temp/=10;
+				}
+			 }
+		}
+	}
+}
+printf("\n rev : %d",rev);
+getch();
+}

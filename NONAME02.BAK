@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main(>
+clrscr
+{
+string a;int b;
+cout<<"enter the name";
+cin>>a;
+cout<<"enter the age";
+cin>>b;
+if(b>=18>
+{
+cout<<"the user is eligible for voting";
+else
+cout<<"the user is not eligilbe for voting;
+getch
+}
+}

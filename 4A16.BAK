@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+double ans=0;
+float n,x,i,j,p;
+clrscr();
+printf("\n enter a x and n for 1 + x + x^2 +...+ x^n : ");
+scanf("%f%f",&x,&n);
+for(i=1;i<=n;i++)
+{
+ for(j=0;j<i;j++)
+	ans+=(p*=i);
+}
+
+
+printf("\n 1+ x + x^2 +...+ x^%f = %lf ",n,ans);
+getch();
+}

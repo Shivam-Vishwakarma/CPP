@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------
+Created by:
+SHIVAM VISHWAKARMA         0225CS181049
++91 9589212176             cs1805@gloabal.org.in
+Date : 27.04.2020
+-------------------------------------------------------------*/
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+char ch;
+FILE *fp,*fp2;
+fp=fopen("assign2.c","r");
+clrscr();
+if(fp==NULL)
+	{
+	printf("File Not Found!!!\nPress any key to exit");
+	getch();
+	exit(1);
+	}
+fp2=fopen("c:\\copyprg.txt","w");
+if(fp2==NULL)
+	{
+	printf("File cannot be created!!!\nPress any key to exit");
+	getch();
+	exit(1);
+	}
+printf("\nThe content of file is: \n");
+while(!feof(fp)){
+ch=getc(fp);
+putc(ch,fp2);
+printf("%c",ch);
+}
+printf("\n\nA txt file is sucessfully  created as copyprg.txt");
+fclose(fp);
+getch();
+}

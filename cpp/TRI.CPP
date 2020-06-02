@@ -1,0 +1,22 @@
+#include"my.h"
+main()
+{
+clrscr();
+int i,j,k,no;
+printf("\n ENTER NO. OF ROWS : ");
+scanf("%d",&no);
+for(i=1;i<=no;i++)
+{
+  printf("\n");
+  for(j=no;j>i;j--)
+  printf(" ");
+  for(k=1;k<2*i;k++)
+  printf("*");
+}
+getch();
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void fact(int a)
+{
+  int i,f=1;
+for(i=1;i<=a;i++)
+  f=f*i;
+ printf("factorial = %d",f);
+
+}
+void main()
+{int a;
+clrscr();
+printf("enter num ");
+scanf("%d",&a);
+fact(a);
+getch();
+}
+
+
+
+
+

@@ -1,0 +1,16 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+clrscr;
+float a,b,c,avg;
+cout<<"enter 1st subject marks out of 100";
+cin>>a;
+cout<<"enter 2nd subject";
+cin>>b;
+cout<<"enter 3rd subject";
+cin>>c;
+avg=(a+b+c)/300*100;
+cout<<avg;
+getch();
+}
